@@ -8,7 +8,7 @@ Demonstration of the modern JavaScript file loading in HTML.
 
 Open `index.html` in a browser, then open the browser developer tools. The console will show an error. The reason is that the external file `script.js` is loaded in the page header. As said file loads and executes, it tries to interact with the page's `<body>` element before HTML is parsed.
 
-A traditional solution consists in loading the JavaScript file at the end of the HTML document, which diminishes performance by delaying page load.
+A traditional solution consists in loading the JavaScript file at the end of the HTML document, but it diminishes performance by delaying page load.
 
 **Async and defer**
 
